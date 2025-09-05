@@ -1,0 +1,75 @@
+/* Подключение шрифта Noto Sans Mono */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;700&display=swap');
+
+/* Базовые стили */
+body {
+    background-color: #121212; /* Тёмный фон */
+    color: #E0E0E0; /* Светлый текст */
+    font-family: 'Noto Sans Mono', monospace;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Контейнеры для контента */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Навигация */
+header {
+    background-color: #1e1e1e; /* Серый фон для шапки */
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: #00FFC2; /* Акцентный цвет */
+}
+
+.nav-links a {
+    color: #E0E0E0;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00FFC2;
+}
+
+/* Стили для страницы "О нас" */
+.about-section, .rules-section {
+    padding: 40px 0;
+    text-align: left; /* Выравнивание по левому краю */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Стили для ссылок и имени админа */
+.about-section a, .rules-section a {
+    color: #00FFC2; /* Акцентный цвет */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.about-section a:hover, .rules-section a:hover {
+    text-decoration: underline;
+}
